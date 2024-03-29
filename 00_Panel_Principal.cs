@@ -33,5 +33,24 @@ namespace TP_1
             Ejercicio1.Show();
             this.Hide();
         }
+
+        private void BTN_Ejercicio_2_Click(object sender, EventArgs e)
+        {
+            Form_Ejercicio_2 Ejercicio2 = new Form_Ejercicio_2(this);
+            Ejercicio2.Show();
+            this.Hide();
+        }
+
+        private void BTN_Ejercicio_3_Click(object sender, EventArgs e)
+        {
+            Form_Ejercicio_3 Ejercicio3 = new Form_Ejercicio_3(this);
+            Ejercicio3.Show();
+            this.Hide();
+        }
+
+        private void ETI_LISTA_INTEG_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

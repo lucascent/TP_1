@@ -29,5 +29,23 @@ namespace TP_1
         {
                Principal.Show();
         }
+
+        private void BTN_Agregar_Click(object sender, EventArgs e)
+        {
+            if (TXT_NombreYApellido.Text.Trim() != "")
+            {
+                LST_Lista1.Items.Add(TXT_NombreYApellido.Text.Trim());
+                TXT_NombreYApellido.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("Debe ingresar un Nombre y Apellido");
+            }
+        }
+
+        private void BTN_Flecha_Click(object sender, EventArgs e)
+        {
+            LST_Lista2.Items.Add(LST_Lista1.SelectedItem);
+        }
     }
 }

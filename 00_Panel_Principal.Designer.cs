@@ -38,9 +38,9 @@
             // BTN_Ejercicio_1
             // 
             this.BTN_Ejercicio_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Ejercicio_1.Location = new System.Drawing.Point(48, 95);
+            this.BTN_Ejercicio_1.Location = new System.Drawing.Point(50, 95);
             this.BTN_Ejercicio_1.Name = "BTN_Ejercicio_1";
-            this.BTN_Ejercicio_1.Size = new System.Drawing.Size(219, 91);
+            this.BTN_Ejercicio_1.Size = new System.Drawing.Size(220, 91);
             this.BTN_Ejercicio_1.TabIndex = 0;
             this.BTN_Ejercicio_1.Text = "EJERCICIO 1";
             this.BTN_Ejercicio_1.UseVisualStyleBackColor = true;
@@ -49,28 +49,31 @@
             // BTN_Ejercicio_2
             // 
             this.BTN_Ejercicio_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Ejercicio_2.Location = new System.Drawing.Point(299, 95);
+            this.BTN_Ejercicio_2.Location = new System.Drawing.Point(290, 95);
             this.BTN_Ejercicio_2.Name = "BTN_Ejercicio_2";
-            this.BTN_Ejercicio_2.Size = new System.Drawing.Size(219, 91);
+            this.BTN_Ejercicio_2.Size = new System.Drawing.Size(220, 91);
             this.BTN_Ejercicio_2.TabIndex = 1;
             this.BTN_Ejercicio_2.Text = "EJERCICIO 2";
             this.BTN_Ejercicio_2.UseVisualStyleBackColor = true;
+            this.BTN_Ejercicio_2.Click += new System.EventHandler(this.BTN_Ejercicio_2_Click);
             // 
             // BTN_Ejercicio_3
             // 
             this.BTN_Ejercicio_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Ejercicio_3.Location = new System.Drawing.Point(550, 95);
+            this.BTN_Ejercicio_3.Location = new System.Drawing.Point(530, 95);
             this.BTN_Ejercicio_3.Name = "BTN_Ejercicio_3";
-            this.BTN_Ejercicio_3.Size = new System.Drawing.Size(219, 91);
+            this.BTN_Ejercicio_3.Size = new System.Drawing.Size(220, 91);
             this.BTN_Ejercicio_3.TabIndex = 2;
             this.BTN_Ejercicio_3.Text = "EJERCICIO 3";
             this.BTN_Ejercicio_3.UseVisualStyleBackColor = true;
+            this.BTN_Ejercicio_3.Click += new System.EventHandler(this.BTN_Ejercicio_3_Click);
             // 
             // ETI_INTEGRANTES
             // 
             this.ETI_INTEGRANTES.AutoSize = true;
             this.ETI_INTEGRANTES.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ETI_INTEGRANTES.Location = new System.Drawing.Point(103, 255);
+            this.ETI_INTEGRANTES.ForeColor = System.Drawing.Color.White;
+            this.ETI_INTEGRANTES.Location = new System.Drawing.Point(106, 312);
             this.ETI_INTEGRANTES.Name = "ETI_INTEGRANTES";
             this.ETI_INTEGRANTES.Size = new System.Drawing.Size(164, 25);
             this.ETI_INTEGRANTES.TabIndex = 3;
@@ -81,11 +84,13 @@
             // 
             this.ETI_LISTA_INTEG.AutoSize = true;
             this.ETI_LISTA_INTEG.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ETI_LISTA_INTEG.Location = new System.Drawing.Point(265, 284);
+            this.ETI_LISTA_INTEG.ForeColor = System.Drawing.Color.White;
+            this.ETI_LISTA_INTEG.Location = new System.Drawing.Point(331, 312);
             this.ETI_LISTA_INTEG.Name = "ETI_LISTA_INTEG";
             this.ETI_LISTA_INTEG.Size = new System.Drawing.Size(179, 100);
             this.ETI_LISTA_INTEG.TabIndex = 6;
             this.ETI_LISTA_INTEG.Text = "Abadín, Adrián\r\nCenturión, Lucas\r\nDi Candia, Enzo\r\nPoderoso, Sergio";
+            this.ETI_LISTA_INTEG.Click += new System.EventHandler(this.ETI_LISTA_INTEG_Click);
             // 
             // Form_Panel_Principal
             // 
@@ -100,7 +105,7 @@
             this.Controls.Add(this.BTN_Ejercicio_1);
             this.Name = "Form_Panel_Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Panel_Principal";
+            this.Text = "Panel Principal";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
