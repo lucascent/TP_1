@@ -33,5 +33,36 @@ namespace TP_1
         {
             Principal.Show();
         }
+
+        private void BTN_Borrar_Click(object sender, EventArgs e)
+        {
+            lblTask.Text = "";
+            RAD_Femenino.Checked = true;
+            RAD_Casado.Checked = true;
+
+            foreach (int  item in CHE_Puesto.CheckedIndices)
+            {
+                CHE_Puesto.SetItemCheckState(((short)item), 0);
+                
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            lblTask.Text = "";
+            if (RAD_Femenino.Checked) lblGender.Text = "Sexo: Femenino";
+            else lblGender.Text = "Sexo: Masxulino";
+            if (RAD_Casado.Checked) lblIsMarried.Text = "Estado Civil: Casado";
+            else lblIsMarried.Text = "Estado Civil: Soltero";
+            foreach (var item in CHE_Puesto.CheckedItems)
+            {
+                lblTask.Text += item+"\n";
+            }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+  
+        }
     }
 }
