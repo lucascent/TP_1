@@ -38,5 +38,43 @@ namespace TP_1
         {
 
         }
+
+        private void BTN_Agregar_Click(object sender, EventArgs e)
+        {
+
+            if ((TXT_Nombre.Text.Trim() != "") & (TXT_Apellido.Text.Trim() != ""))
+
+            {
+                LST_Elementos.Items.Add(TXT_Nombre.Text.Trim() + " " + TXT_Apellido.Text.Trim());
+                TXT_Nombre.Text = "";
+                TXT_Apellido.Text = "";
+                LST_Elementos.Sorted = true;
+                TXT_Nombre.Focus();
+            }
+            else
+            {
+                MessageBox.Show("Los campos Nombre y Apellido no pueden estar vacíos");
+                TXT_Nombre.Text = "";
+                TXT_Apellido.Text = "";
+                TXT_Nombre.Focus();
+
+            }
+        }
+
+        private void LST_Elementos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void BTN_Borrar_Click(object sender, EventArgs e)
+        {
+           if(LST_Elementos.SelectedItem != null)
+            {
+            LST_Elementos.Items.Remove(LST_Elementos.SelectedItem);
+            }
+           else
+            {
+                MessageBox.Show("Seleccione el elemento que desea Borrar");
+            }
+        }
     }
 }
