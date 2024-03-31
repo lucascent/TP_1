@@ -94,7 +94,7 @@ agregar se irán agregando a una lista de elementos. El botón Borrar, eliminara e
 seleccionado. En caso de no haber seleccionado ningún ítem de la lista y hacer clic en el
 botón Borrar indicar con un cartel aclaratorio que debe haber una selección.
 
-> **Nota**  Tener en cuenta:
+> **Tener en cuenta:**  
 > * Los elementos deben aparecer ordenados alfabéticamente en la lista, aunque el
 > operador los ingrese desordenados.
 > * No aceptar nombres en blanco.
@@ -114,7 +114,7 @@ los elementos seleccionados por el usuario a través de un Label.
 Las opciones seleccionadas no deben desactivarse luego de hacer clic en el botón Mostrar
 
 ![Ejercicio 3](ejercicio3.png)
-
+### Codigo implementado:
 ```cs 
 using System;
 using System.Collections.Generic;
