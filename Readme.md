@@ -13,7 +13,7 @@ En los ejercicios, realizar todas las validaciones posibles.
 ![Menu Principal](menuPrincipal.png)
 
 ### Codigo implementado
-```c# 
+```cs 
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -94,15 +94,15 @@ agregar se irán agregando a una lista de elementos. El botón Borrar, eliminara e
 seleccionado. En caso de no haber seleccionado ningún ítem de la lista y hacer clic en el
 botón Borrar indicar con un cartel aclaratorio que debe haber una selección.
 
-### Tener en cuenta:
-** Los elementos deben aparecer ordenados alfabéticamente en la lista, aunque el
-operador los ingrese desordenados.
-** No aceptar nombres en blanco.
-** No aceptar apellidos en blanco.
-** Se deben completar los dos elementos, tanto nombre y apellido para que se pueda
-agregar.
-** No se podrá agregar el mismo nombre y apellido, validando mayúsculas y minúsculas,
-es decir Carlos Pérez y carlos pérez, son elementos repetidos.
+> **Nota**  Tener en cuenta:
+> * Los elementos deben aparecer ordenados alfabéticamente en la lista, aunque el
+> operador los ingrese desordenados.
+> * No aceptar nombres en blanco.
+> * No aceptar apellidos en blanco.
+> * Se deben completar los dos elementos, tanto nombre y apellido para que se pueda
+> agregar.
+> * No se podrá agregar el mismo nombre y apellido, validando mayúsculas y minúsculas,
+> es decir Carlos Pérez y carlos pérez, son elementos repetidos.
 
 ![Ejercicio 2](ejercicio2.png)
 
@@ -115,7 +115,7 @@ Las opciones seleccionadas no deben desactivarse luego de hacer clic en el botón
 
 ![Ejercicio 3](ejercicio3.png)
 
-```c# 
+```cs 
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
