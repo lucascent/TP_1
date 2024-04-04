@@ -86,7 +86,61 @@ Al seleccionar el botón con el signo >> se pasarán todos los ítems a la lista de
 eliminando los de la lista de la izquierda.
 
 ![Ejercicio 1](ejercicio1.png)
+### Codigo implementado
+```cs
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
+namespace TP_1
+{
+    public partial class Form_Ejercicio_1 : Form
+    {
+      Form_Panel_Principal Principal;
+        public Form_Ejercicio_1(Form_Panel_Principal Principal)
+        {
+            InitializeComponent();
+            this.Principal = Principal;
+        }
+
+        private void Form_Ejercicio_1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form_Ejercicio_1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+               Principal.Show();
+        }
+
+        private void BTN_Agregar_Click(object sender, EventArgs e)
+        {
+            if (TXT_NombreYApellido.Text.Trim() != "")
+            {
+                LST_Lista1.Items.Add(TXT_NombreYApellido.Text.Trim());
+                TXT_NombreYApellido.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("Debe ingresar un Nombre y Apellido");
+            }
+        }
+
+        private void BTN_Flecha_Click(object sender, EventArgs e)
+        {
+            LST_Lista2.Items.Add(LST_Lista1.SelectedItem);
+        }
+    }
+}
+
+```
 ## Ejercicio 2
 El programa tiene las siguientes características:
 Se deben completar el TextBox Nombre y el TextBox Apellido y luego al dar clic en el botón
@@ -106,6 +160,90 @@ botón Borrar indicar con un cartel aclaratorio que debe haber una selección.
 
 ![Ejercicio 2](ejercicio2.png)
 
+### Codigo implementado
+```cs
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace TP_1
+{
+    public partial class Form_Ejercicio_2 : Form
+    {
+        Form_Panel_Principal Principal;
+        public Form_Ejercicio_2(Form_Panel_Principal Principal)
+        {
+            InitializeComponent();
+            this.Principal = Principal;
+        }
+
+        private void Form_Ejercicio_2_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Principal.Show();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BTN_Agregar_Click(object sender, EventArgs e)
+        {
+
+            if ((TXT_Nombre.Text.Trim() != "") & (TXT_Apellido.Text.Trim() != ""))
+
+            {
+                LST_Elementos.Items.Add(TXT_Nombre.Text.Trim() + " " + TXT_Apellido.Text.Trim());
+                TXT_Nombre.Text = "";
+                TXT_Apellido.Text = "";
+                LST_Elementos.Sorted = true;
+                TXT_Nombre.Focus();
+            }
+            else
+            {
+                MessageBox.Show("Los campos Nombre y Apellido no pueden estar vacíos");
+                TXT_Nombre.Text = "";
+                TXT_Apellido.Text = "";
+                TXT_Nombre.Focus();
+
+            }
+        }
+
+        private void LST_Elementos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void BTN_Borrar_Click(object sender, EventArgs e)
+        {
+           if(LST_Elementos.SelectedItem != null)
+            {
+            LST_Elementos.Items.Remove(LST_Elementos.SelectedItem);
+            }
+           else
+            {
+                MessageBox.Show("Seleccione el elemento que desea Borrar");
+            }
+        }
+    }
+}
+
+```
 ### Ejercicio 3
 El programa tendrá las siguientes características:
 Por defecto estará seleccionado la opción Femenino y Casado. El usuario deberá elegir entre
